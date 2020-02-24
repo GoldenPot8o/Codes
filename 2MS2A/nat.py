@@ -11,7 +11,6 @@ class nat(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if not message.author.bot:
             if message.author.name in self.people:
                 await message.channel.send(random.choice(["no.", "wrong.", "incorrect.", "i dont think so.", "nope.", "nope, i dont want that.", "thats no good.", "invalid.", "i dont like it."]))
 
